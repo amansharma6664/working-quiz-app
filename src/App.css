@@ -5,6 +5,10 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.App {
+  justify-items: center;
+}
+
 body {
   background: linear-gradient(to right, #f9f9f9, #eaeef3);
   min-height: 100vh;

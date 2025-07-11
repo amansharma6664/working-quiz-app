@@ -9,10 +9,10 @@ const Quiz = () => {
   const [score, setScore] = useState(0);
 
   useEffect(() => {
-    fetch('https://opentdb.com/api.php?amount=10&type=multiple')  
+    fetch('https://opentdb.com/api.php?amount=10&type=multiple')  //Fetching from the API
       .then((res) => res.json())
       .then((data) => {
-        console.log("Raw API response:", data); //  Debug log
+        console.log("Raw API response:", data); 
 
          //  Final correct check
         if (!data || data.response_code !== 0 || !Array.isArray(data.results)) {   
